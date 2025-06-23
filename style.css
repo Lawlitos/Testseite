@@ -3,7 +3,7 @@ body {
     color: lime;
     font-family: "Comic Sans MS", cursive, sans-serif;
     text-align: center;
-    animation: blinkBackground 5s infinite alternate;
+    animation: blinkBackground 1s infinite alternate;
 }
 
 h1 {
@@ -20,8 +20,10 @@ h1 {
 
 @keyframes blinkBackground {
     0% { background-color: black; }
+    25% { background-color: blue; }
     50% { background-color: darkred; }
-    100% { background-color: black; }
+    75% { background-color: greenyellow; }
+    100% { background-color: purple; }
 }
 
 @keyframes shake {
