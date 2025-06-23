@@ -2,29 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>MLG Pro Website</title>
+    <title> MLG OVERLOAD </title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1> xXx_MLG_420_xXx  </h1>
+<button id="mlg-toggle">🔊 Toggle MLG Mode</button>
 
-<img src="https://media1.tenor.com/m/LnN1WqEy1rcAAAAC/wefw-mlg.gif" alt="MLG Doge">
+<h1>🔥🔥🔥 MLG UNLEASHED 🔥🔥🔥</h1>
 
-<p>Get <strong>rekt</strong>, m8!</p>
-
-<div class="effects">
-    <img src="https://media1.tenor.com/m/F63oBAgOgGAAAAAd/daaninator-daaninator-mlg.gif" alt="swag">
-    <img src="Download.jpg" alt="bucket">
-    <img src="https://media1.tenor.com/m/X6z6u6th6SgAAAAC/rekt-bruh.gif" alt="reckt">
+<div class="mlg-zone" id="mlg-zone" style="display: none;">
+    <img src="https://media.tenor.com/3H451Jn_b1MAAAAi/dog-thug-life.gif" alt="Doge">
+    <img src="https://media1.tenor.com/m/-ZhFmm-Fh0oAAAAd/crazy-kill-sniping.gif" alt="Noscope">
+    <img src="https://media1.tenor.com/m/XifpSEBbB80AAAAC/snoop-dog-mlg.gif" alt="Snoop">
+    <img src="https://media1.tenor.com/m/taHkvSxjBogAAAAC/vape-nation.gif" alt="Vape Nation">
+    <img src="https://media.tenor.com/VtfpK4lFEMoAAAAi/explosion-boom.gif" alt="Explosion">
+    <img src="https://media1.tenor.com/m/NVNXTWnENmQAAAAC/mlg-illuminati.gif" alt="Illuminati">
 </div>
 
-<audio autoplay loop>
-    <source src="https://archive.org/download/MLGSoundboard/MLG%20Airhorn.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-</audio>
 
-<footer>
-    <p>© 2025 MLG Gang</p>
-</footer>
+<footer>© 2025 MLG Squad – DEAL WITH IT 😎</footer>
+
+<script>
+    const toggleBtn = document.getElementById('mlg-toggle');
+    const mlgZone = document.getElementById('mlg-zone');
+
+    let mlgOn = true;
+
+    toggleBtn.onclick = () => {
+        mlgOn = !mlgOn;
+        mlgZone.style.display = mlgOn ? 'block' : 'none';
+
+        if (mlgOn) {
+            mlgAudio.play();
+            document.body.classList.add('mlg-crazy');
+        } else {
+            mlgAudio.pause();
+            document.body.classList.remove('mlg-crazy');
+        }
+    };
+</script>
 </body>
 </html>
